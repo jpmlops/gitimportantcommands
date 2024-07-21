@@ -76,3 +76,9 @@ For example, I have the following entry in my .bashrc file.
 > Sample: git bisect
 
 - git bisect uses divide and conquer algorithm to find a broken commit among a large number of commits.
+
+> See diff-erence for the entire project (not just one file at a time) in a 3rd party diff tool
+<br> Sample **git difftool -d**
+<br> **git config --global diff.tool meld**
+
+> git config --global merge.tool meld
