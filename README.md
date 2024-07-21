@@ -26,3 +26,5 @@ git log --author="Ales kras" --after="1 week ago"
 ## Log actual changes in a file
 
 > Command: git log -p filename
+
+This lets you view not only the commit messages, author and date, but actual changes that took place in each commit.
