@@ -28,3 +28,18 @@ git log --author="Ales kras" --after="1 week ago"
 > Command: git log -p filename
 
 This lets you view not only the commit messages, author and date, but actual changes that took place in each commit.
+
+> git blame filename    => to find the person responsible for every line of the file
+
+
+Note: git reset --hard [commit hash code]  => to go a perticular commit
+
+
+## Three stages in git, and how to move between them
+
+> Sample | git reset --hard HEAD and git status -s
+
+As you may already know by now, a file in git can be in 3 stages:
+1. Not staged for commit
+2. Staged for commit
+3. Committed
