@@ -1,6 +1,13 @@
 # Some notes on rebasing
 
-> Sample: git pull -—rebase
+> Sample: git pull --rebase
+
+In Git, there are two main ways to integrate changes from one branch into another: 
+1. the merge and 
+2. the rebase.
+
+In this section you’ll learn what rebasing is, how to do it, why it’s a pretty amazing tool, and in what cases you won’t want to use it.
+
 
 >> important tools for merging - <MELD>
 

@@ -22,28 +22,25 @@ Example:
 
 git log --author="Ales kras" --after="1 week ago"
 
-
 ## Log actual changes in a file
 
 > Command: git log -p filename
 
 This lets you view not only the commit messages, author and date, but actual changes that took place in each commit.
 
-> git blame filename    => to find the person responsible for every line of the file
+> git blame filename => to find the person responsible for every line of the file
 
-
-Note: git reset --hard [commit hash code]  => to go a perticular commit
-
+Note: git reset --hard [commit hash code] => to go a perticular commit
 
 ## Three stages in git, and how to move between them
 
 > Sample | git reset --hard HEAD and git status -s
 
 As you may already know by now, a file in git can be in 3 stages:
+
 1. Not staged for commit
 2. Staged for commit
 3. Committed
-
 
 ## Only “add” some changes from a file
 
@@ -70,9 +67,13 @@ For example, I have the following entry in my .bashrc file.
 
 <alias gil=”git log --oneline --graph”>, allowing me to use gil instead of the long command,which is even 2 character shorter than having to type git l :).
 
-
 ## Quickly find a commit that broke your feature
 
 > Sample: git bisect
 
 - git bisect uses divide and conquer algorithm to find a broken commit among a large number of commits.
+
+> git merge branchname => merge in current branch
+> git diff [branch-name]..[another-branch-name]
+> git reset
+> git revert
