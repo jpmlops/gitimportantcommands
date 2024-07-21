@@ -1,4 +1,10 @@
-# Extract a file from another branch
+# Some notes on rebasing
+
+> Sample: git pull -—rebase
+
+>> important tools for merging - <MELD>
+
+## Extract a file from another branch
 
 
 > Sample: git show some-branch:some-file.js
