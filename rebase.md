@@ -1,6 +1,6 @@
 # Some notes on rebasing
 
-> Sample: git pull -—rebase
+> Sample: git pull --rebase
 
 >> important tools for merging - <MELD>
 
