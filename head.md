@@ -65,3 +65,15 @@ Assuming HEAD is pointing to C3 and the index matches C3.
 --hard flag modifies HEAD, index and working directory. If we’re at C3 and run git reset --hard HEAD~1, then the changes committed to C3, uncommitted changes that we have in the staging area and all the changes in the working directory will be removed and the working directory will match C2 commit.
 
 > HEAD, index and working directory all will have the same version of files.
+
+## How To Undo a Remote Commit
+
+There are times you want to undo a commit you have pushed to a remote repository. You can use git revert to undo it locally and push this change to the remote branch.
+
+First, get the commit hash using git reflog.
+
+> git reflog
+Then revert it. Let’s assume my commit hash is 1257b6910, I’ll do the following:
+
+> git revert 9157b6910
+Finally, push this change to the remote branch.
