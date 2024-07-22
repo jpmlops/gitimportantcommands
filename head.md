@@ -6,3 +6,6 @@ When you create a new commit, Git automatically updates HEAD to point to the new
 ![alt text](image.png)
 
 So, when we are talking about resetting to HEAD, it means resetting the current branch to the most recent commit. Apart from the HEAD, you can also reset to other commits with the `git reset --hard <commit-hash>` command.
+
+
+> You can even use some numbers with HEAD itself to go back to a particular commit. For instance, HEAD{0} means the HEAD itself, HEAD{1} means the commit before the HEAD, HEAD{2} means two commits before the HEAD, and so on.
