@@ -52,3 +52,16 @@ Assume HEAD is pointing to C3 and the index matches C3.
 When we execute git reset --mixed HEAD~1 then HEAD points to C2, also the index gets modified to match C2 (all the changes that were committed won’t be seen on stage but they are there in the working directory).
 
 > Note that --mixed is the default option.
+
+### What Is git reset <file>?
+git reset: It removes from the index/staging area, but it leaves the file unchanged in the working directory. Basically, this command unstages a file without overwriting any changes.
+
+## What Is git reset --hard HEAD~1
+
+Assuming HEAD is pointing to C3 and the index matches C3.
+
+`- C1 - C2 - C3`
+
+--hard flag modifies HEAD, index and working directory. If we’re at C3 and run git reset --hard HEAD~1, then the changes committed to C3, uncommitted changes that we have in the staging area and all the changes in the working directory will be removed and the working directory will match C2 commit.
+
+> HEAD, index and working directory all will have the same version of files.
