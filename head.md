@@ -40,3 +40,15 @@ Let’s say we have the following commit tree:
 `- c1 - c2 - c3`
 
 Assuming HEAD is pointing to C3 and the index (stage) matches to C3.
+
+When we execute git reset --soft HEAD~1, now HEAD points to C2, but the index (stage) will have changes from C3 and git status will show them as staged. Now if we run git commit at this point, we’ll get a new commit with the same changes as C3.
+
+## What Is git reset --mixed HEAD~1?
+
+`- c1 - c2 - c3`
+
+Assume HEAD is pointing to C3 and the index matches C3.
+
+When we execute git reset --mixed HEAD~1 then HEAD points to C2, also the index gets modified to match C2 (all the changes that were committed won’t be seen on stage but they are there in the working directory).
+
+> Note that --mixed is the default option.
