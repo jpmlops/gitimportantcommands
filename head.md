@@ -9,3 +9,5 @@ So, when we are talking about resetting to HEAD, it means resetting the current 
 
 
 > You can even use some numbers with HEAD itself to go back to a particular commit. For instance, HEAD{0} means the HEAD itself, HEAD{1} means the commit before the HEAD, HEAD{2} means two commits before the HEAD, and so on.
+
+## How to Reset to HEAD in Git
