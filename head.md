@@ -77,3 +77,15 @@ Then revert it. Let’s assume my commit hash is 1257b6910, I’ll do the follow
 
 > git revert 9157b6910
 Finally, push this change to the remote branch.
+
+# You Used git reset --hard and Need to Get That Code Back
+
+Let's say you destroyed a commit using --hard, but then decided you need it back. 
+
+Don’t worry! There’s still a way to get it back.
+
+Type `git reflog` and you’ll see a list of (partial) commit SHA’s (basically commit hashes). This command shows a log of changes to the local repository’s HEAD. Now find the commit you destroyed and execute the below command.
+
+> `git checkout -b NewBranchName CommitHashYouDestroyed`
+
+Now you’ve restored that commit. Commits don’t actually get destroyed in Git for `90 days` or so, so you can usually go back and rescue one you didn’t mean to get rid of.  
