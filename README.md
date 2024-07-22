@@ -57,10 +57,10 @@ In case of git add, it allows you to interactive select exactly what you want to
 
 Git comes with built in aliases, for example you can run the following command once:
 
-<git config --global alias.l "log --oneline --graph">
+> git config --global alias.l "log --oneline --graph"
 
 Which would create a new git alias named l, that would allow you to run:
-<git l instead of git log --oneline --graph>.
+ > git l instead of git log --oneline --graph.
 
 Note that you can also append other parameters after the alias (i.e. git l --author="Alex").
 
@@ -68,7 +68,7 @@ Another alternative, is good old Bash alias.
 
 For example, I have the following entry in my .bashrc file.
 
-<alias gil=”git log --oneline --graph”>, allowing me to use gil instead of the long command,which is even 2 character shorter than having to type git l :).
+> alias gil=”git log --oneline --graph”>, allowing me to use gil instead of the long command,which is even 2 character shorter than having to type git l :).
 
 
 ## Quickly find a commit that broke your feature
