@@ -89,3 +89,5 @@ $ git branch -d hotfix
 Deleted branch hotfix (3a0874c).
 
 ```
+# Tool 
+> important tool: We can also view the history using tools like `gitg` (try it!)
