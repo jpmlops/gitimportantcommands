@@ -77,3 +77,15 @@ For example, I have the following entry in my .bashrc file.
 > git diff [branch-name]..[another-branch-name]
 > git reset
 > git revert
+
+
+> After megring `hotfix` to `master` - master is fast-forwarded to hotfix.
+
+After your super-important fix is deployed, you’re ready to switch back to the work you were doing before you were interrupted. However, first you’ll delete the hotfix branch, because you no longer need it — the master branch points at the same place. You can delete it with the -d option to git branch:
+
+```bash
+
+$ git branch -d hotfix
+Deleted branch hotfix (3a0874c).
+
+```
