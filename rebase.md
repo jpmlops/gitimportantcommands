@@ -47,3 +47,12 @@ Whereas, in Interactive rebasing, you can alter individual commits as they are m
 
 This command lists all the commits which are about to be moved and asks for rebasing all commits individually and then rebasing them according to the choices you entered. This gives you complete control over what your project history looks like.
 
+## Git Rebase Commands
+The following are the most used Git rebase commands:
+
+1. git rebase master: The command “git rebase master” can be used to make all modifications found in your master branch part of your current branch.
+2. git rebase –continue: When we are rebasing the branches we will face some conflicts and issues then we need to resolve the issue. After resolving the issue we again continue the rebasing processes for that we use “git rebase –continue”.
+3. git rebase –abort: “Git rebase –abort” command cancels a rebase that is currently underway and restores the branch to its initial state.
+4. git rebase –skip: When rebasing the branches we might face some unresolved conflicts to skip the particular encounters we will use  “git rebase –skip”. Skipping the commit is not good practice it will damage your codebase.
+5. git rebase -I HEAD~3: With the help of this command, you can interactively rebase the most recent three commits onto the active branch. You can choose which commits to rebase, alter commit messages, and squash or divide commits in the interactive editor that is opened.
+
